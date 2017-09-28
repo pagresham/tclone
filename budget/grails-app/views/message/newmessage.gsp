@@ -2,20 +2,31 @@
 <head>
     <title>message.newmessage</title>
     <meta charset="UTF-8">
-    <meta name="layout" content="main">
+    <meta name="layout" content="msg_layout">
 </head>
 <body>
 <div class="new_message">
     <h2>Hello ...  [Currently active User's name]</h2>
     <h2>Enter a new Message</h2>
     <g:form>
-        <p>
+        <p class="formComponent">
             <label for="message" >What's Up?</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea  class="form-control" id="message" name="message"></textarea>
         </p>
-        <!--Needs a submit button!!
-        Needs the controller, or a controller action ro save this message. -->
-        <g:actionSubmit action="create_new_message" value="Create New Message" class="btn btn-info btn-sm"/>
+        <p class="formComponent>
+            <label for="currentUser">Current User</label>
+            <g:select
+                    class="form-control"
+                    id="currentUser"
+                    name="author"
+                    from="${users}"
+                    optionKey="id"
+            />
+        </p>
+        <p class="formComponent">
+            <g:actionSubmit action="create_new_message" value="Create New Message" class="btn btn-info btn-sm"/>
+        </p>
+
     </g:form>
 </div>
 

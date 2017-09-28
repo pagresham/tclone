@@ -13,3 +13,44 @@
 *= require mobile
 *= require_self
 */
+
+html, body {
+    height: 100%;
+}
+
+
+.nav_color {
+    background: linear-gradient(to right, #4c9bb9 , #79B94C);
+}
+
+.formComponent {
+    margin-top: 1em;
+}
+.form-control {
+    max-width: 50%;
+}
+
+.errorText {
+    color: red;
+}
+
+
+/* Start sticky footer style */
+#wrap {
+    min-height: 100%;
+}
+
+#main {
+    overflow:auto;
+    padding-bottom:50px; /* this needs to be bigger than footer height*/
+}
+.footer {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-top: -50px; /* negative value of footer height */
+    height: 50px;
+    clear:both;
+    /*padding-top:20px;*/
+}
+/* End sticky footer style */

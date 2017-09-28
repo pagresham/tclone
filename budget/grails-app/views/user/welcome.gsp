@@ -3,7 +3,7 @@
 <head>
     <title>use.welcome</title>
     <meta charset="UTF-8">
-    <meta name="layout" content="main">
+    <meta name="layout" content="msg_layout">
 </head>
 <body>
     <div>

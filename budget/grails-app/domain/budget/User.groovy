@@ -7,6 +7,10 @@ class User {
 
     static hasMany = [messages: Message]
 
+    String toString() {
+        "${fname} ${lname}"
+    }
+
     static constraints = {
         fname blank: false, size: 1..20
         lname blank: false, size: 1..20

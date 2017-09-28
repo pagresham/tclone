@@ -3,7 +3,7 @@
 <head>
     <title>message.show</title>
     <meta charset="UTF-8">
-    <meta name="layout" content="main">
+    <meta name="layout" content="msg_layout">
 </head>
 <body>
     <div>
@@ -20,6 +20,10 @@
                     </div>
                 </div>
             </g:each>
+            <div style="padding-left: 1em">
+                <g:link class='btn btn-success btn-sm' action="newmessage" controller="message">Add New Message</g:link>
+            </div>
+
 
         </div>
     </div>

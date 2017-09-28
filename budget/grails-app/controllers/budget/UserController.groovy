@@ -2,7 +2,9 @@ package budget
 
 class UserController {
 
-//    def index() { }
+    def index() {
+        redirect(action: 'show')
+    }
     def welcome() {
         def welcomeMessage = "Create a new User, or choose a User to conitnue!"
         render(view: 'welcome', model: [message: welcomeMessage])
