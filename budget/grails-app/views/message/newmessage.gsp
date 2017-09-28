@@ -15,6 +15,7 @@
         </p>
         <!--Needs a submit button!!
         Needs the controller, or a controller action ro save this message. -->
+        <g:actionSubmit action="create_new_message" value="Create New Message" class="btn btn-info btn-sm"/>
     </g:form>
 </div>
 

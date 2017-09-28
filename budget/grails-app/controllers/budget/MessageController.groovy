@@ -14,5 +14,12 @@ class MessageController {
     def newmessage() {
 
     }
+    def create_new_message() {
+        println "here are the create_user_params"
+        println params.message
+        redirect(action: "show")
+        def m = new Message(message: params.message)
+
+    }
 
 }
